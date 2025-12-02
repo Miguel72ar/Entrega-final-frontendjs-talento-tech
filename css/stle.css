@@ -1,0 +1,160 @@
+/* Reset de ccs */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /*sin configuracion el rem vale: */
+    /*1rem = 16px */
+    /* para que 1 rem = 10px */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: #0c203b;
+    color: #e5e6e8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header{
+    background-color: #1d1a20;
+    background-image: url(../img/puerto\ madero\ 1\ 3.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header__logo{
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+
+.header__logo a{
+    color: #f6f5f3;
+    text-decoration: none;
+}
+
+.header nav{
+    padding: 1rem;
+    margin-right: 2rem;
+}
+
+.header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.header__nav li{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.header__nav a{
+    color: #f6f5f3;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem;
+}
+
+.footer {
+    background-color: #d9c8eb;
+    padding: 2rem;
+    color:#0e0a01;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* 
+HOME
+*/
+
+main{
+    /*toma el espacio mayor que pueda*/
+    /*empuja el footer al final de la pagina*/
+    width: 90%; 
+    flex: 1;
+    /*margen 2rem arriba y a bajo -- auto a los lados */
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    font-size: 4rem;
+    margin: 2rem 0;
+}
+
+.parrafo-home {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.Titulo-producto{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin: 2rem 0;
+}
+
+/* alinea las tarjetas */
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.tarjeta-producto {
+    background-color: #273d36;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 30rem;
+    text-align: justify;
+    /*hacemos flexible los elementos de tarjeta */
+    /*los colocamos en columna y centrados */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* separacion */
+    gap: 1rem;
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.tarjeta-producto h3 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.tarjeta-producto p {
+    font-size: 2rem;
+    font-weight: bold;
+}
